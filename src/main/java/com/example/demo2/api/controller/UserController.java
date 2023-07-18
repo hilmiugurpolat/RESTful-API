@@ -17,7 +17,7 @@ public class UserController {
     @GetMapping("/user") //=> Http get isteği ile user endpointine gelen istekleri bu metoda yönlendirir.
     public User getUser(@RequestParam Integer id){
         Optional<User> user = userService.getUser(id);
-        return user.orElse(null); // veya gerekli işlemi gerçekleştirin
+        return user.orElse(null); 
     }
 
 
